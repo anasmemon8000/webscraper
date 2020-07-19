@@ -38,7 +38,7 @@ def send_mail():
     server.starttls()
     server.ehlo()
 
-    server.login("anasmemon9000@gmail.com" , 'asjwzdjrpyatxvnq')
+    server.login("sender email Id" , 'Your - password')
 
     subject = "Reduction in Price has been observed on your product!"
     body = '''
@@ -48,8 +48,8 @@ def send_mail():
     msg = f"Subject : {subject}\n\n{body}"
 
     server.sendmail(
-    'anasmemon9000@gmail.com',
-    'anasmemon8000@gmail.com',
+    'sender mail Id',
+    'reciever mail Id',
     msg
     )
 
